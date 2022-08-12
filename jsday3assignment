@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS introduction</title>
+</head>
+<body>
+    <h1>Welcome to javascript</h1>
+    <script>
+        //Array program
+        let names=["Anshul","Maahi","Shivansh","Alisha"];
+        for(let i=4;i>=1;i--){
+            console.log(names[i]);
+        }
+        let country1={name:"India",capital:"New Delhi",population:60000};
+        let country2={name:"USA",capital:"New York",population:1000};
+        let country3={name:"Nepal",capital:"Katmandu",population:500};
+        let countries=[{name:"Nepal",capital:"Katmandu",population:500},{name:"India",capital:"New Delhi",population:60000},{name:"USA",capital:"New York",population:1000}];
+        for(let i=0;i<3;i++)
+        {
+            if(countries[i].population <2000)
+            {
+                console.log(countries[i].name);
+                console.log(countries[i].capital);
+                console.log(countries[i].population);
+            }
+        }
+
+
+    </script>
+
+</body>
+</html>
