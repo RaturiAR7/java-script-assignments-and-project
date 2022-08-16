@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .{
+           margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .header{
+            height: 100px;
+            width: 100%;
+            background-color: grey;
+        }
+        .carousel
+        {
+            width: 100%;
+            height: 800px;
+            background-color: red;
+            position: relative;
+            overflow: hidden;
+        }
+        .buttons{
+            width: 100%;
+            height: 70px;
+            /* background-color: black; */
+            position: absolute;
+            top: 365px;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .move_button{
+            width: 70px;
+            height: 70px;
+            background-color: rgba(0, 0, 0,.4);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            font-weight: bold;
+            border-radius: 50%;
+            color: white;
+            cursor: pointer;
+        }
+        .slider{
+            height: 800px;
+            /* background-color: green; */
+            width: 500%;
+            display: flex;
+            margin-left: -100%;
+        }
+        .slider_child{
+            height: 800px;
+            width: 20%;
+        }
+        .indicators{
+            width: 100%;
+            height: 12px;
+            position: absolute;
+            bottom: 2%;
+            display: flex;
+            justify-content: center;
+            column-gap: 10px;
+
+        }
+        p{
+            width: 12px;
+            height: 12px;
+            background-color: white;
+            border-radius: 50%;
+        }
+      
+       
+    </style>
+</head>
+<body>
+    <header class=""header>
+
+
+    </header>
+
+    <section class="carousel">
+        <div class="buttons">
+            <div class="move_button" onclick="prevSlide()">
+                <i class="fa-solid fa-chevron-left"></i>
+
+            </div>
+            <div class="move_button" onclick="nextSlide()">
+                <i class="fa-solid fa-chevron-right"></i>
+
+            </div>
+
+        </div>
+        <div class="indicators">
+            <p onclick="moveToSlide(1)"></p>
+            <p onclick="moveToSlide(2)"></p>
+            <p onclick="moveToSlide(3)"></p>
+            <p onclick="moveToSlide(4)"></p>
+            <p onclick="moveToSlide(5)"></p>
+          
+        </div>
+
+        <div class="slider">
+            <div class="slider_child">
+                <img src="./images/pexels-stein-egil-liland-3573603.jpg" alt="4">
+
+            </div>
+            <div class="slider_child">
+                <img src="./images/pexels-aarti-vijay-2919616.jpg" alt="1">
+
+            </div>
+            <div class="slider_child">
+                <img src="./images/pexels-jaime-reimer-2662116.jpg" alt="2">
+
+            </div>
+            <div class="slider_child">
+                <img src="./images/pexels-stein-egil-liland-3408744.jpg" alt="3">
+
+            </div>
+            <div class="slider_child">
+                <img src="./images/pexels-stein-egil-liland-3573603.jpg" alt="4">
+
+            </div>
+            <div class="slider_child">
+                <img src="./images/pexels-aarti-vijay-2919616.jpg" alt="5">
+
+            </div>
+        </div>
+
+    </section>
+
+    <script src="./index.js">
+        
+    </script>
+    
+</body>
+</html>
